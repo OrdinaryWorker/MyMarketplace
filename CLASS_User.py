@@ -7,6 +7,7 @@ class User:
     def order_item(self, id, amount):
         item_to_order = self.catalog.add_item_to_order(id, amount)
         self.order_for_user.append(item_to_order)
+        print("--- User's order: ---")
         result = "\n".join([str(item) for item in self.order_for_user])
         return result
 

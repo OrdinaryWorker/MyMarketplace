@@ -1,4 +1,3 @@
-
 class Administrator:
 
     def __init__(self, catalog):
@@ -9,5 +8,3 @@ class Administrator:
 
     def del_item(self, id):
         self.catalog.delete_item(id)
-
-

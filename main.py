@@ -14,14 +14,11 @@ from data_items import data
 catalog = Catalog(data)
 admin = Administrator(catalog)
 admin.add_item("Rom Capitan", "200", 5)
-admin.del_item('ce9da1300b')
-print("Before Oleg's shopping")
 catalog.print()
-
-
+admin.del_item('18779b2d9f')
+# Before Oleg's shopping
+catalog.print()
 user_oleg = User(catalog)
-print('pokupki')
-print(user_oleg.order_item('18779b2d9f', 2))
-
-print("After Oleg's shopping")
+print(user_oleg.order_item('ce9da1300b', 2))
+# After Oleg's shopping
 catalog.print()

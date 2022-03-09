@@ -12,6 +12,7 @@ class Catalog:
             self.items_dict[item_id] = new_item
 
     def print(self):
+        print("--- Marketplace's catalog: ---")
         for key, value in self.items_dict.items():
             print(value.__str__())
 
