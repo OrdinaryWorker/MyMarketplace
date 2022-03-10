@@ -28,11 +28,7 @@ class Catalog:
     def delete_item(self, id):
         self.items_dict.pop(id)
 
-    def list_items(self):
-        return list(self.items_dict.values())
-
     def get_item(self, id):
-        # if amount <= self.items_dict[id].amount():
         return self.items_dict[id]
 
     def add_item_to_order(self, id, amount):
